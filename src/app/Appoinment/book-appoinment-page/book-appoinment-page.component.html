@@ -1,0 +1,72 @@
+<!-- Appointment Section -->
+<section class="appointment-section" style="background-image: url(images/background/7.jpg);">
+  <div class="auto-container">
+      <div class="row clearfix">
+          <!-- Form Column -->
+          <div class="form-column col-lg-8 col-md-12 col-sm-12">
+              <div class="inenr-column">
+                  <div class="sec-title text-center">
+                      <h2>Get an appointment </h2>
+                      <div class="separator"><span class="flaticon-settings-2"></span></div>
+                  </div>
+                  <div class="appointment-form">
+                      <form method="post" autocomplete="on" [formGroup]="bookAppoinmentForm" (ngSubmit)="onLeaveEdit()">
+                          <div class="row clearfix">
+                              <div class="col-md-6 col-sm-12 col-xs-12 form-group">
+                                  <input type="text" formControlName=""  name="username" placeholder="Full Name" required="">
+                              </div>
+
+                              <div class="col-md-6 col-sm-12 col-xs-12 form-group">
+                                  <input type="tel" name="phone" placeholder="Phone No." required="">
+                              </div>
+
+                              <div class="col-md-6 col-sm-12 col-xs-12 form-group">
+                                  <input type="email" name="email" placeholder="Email Address" required="">
+                              </div>
+
+                              <div class="col-md-6 col-sm-12 col-xs-12 form-group">
+                                 <select class="custom-select-box">
+                                      <option>Car Brand</option>
+                                      <option>Car Brand</option>
+                                      <option>Car Brand</option>
+                                      <option>Car Brand</option>
+                                  </select>
+                              </div>
+
+                              <div class="col-md-6 col-sm-12 col-xs-12 form-group">
+                                  <input type="text" name="date" placeholder="Select Date">
+                                  <span class="icon far fa-calendar-alt"></span>
+                              </div>
+
+                              <div class="col-md-6 col-sm-12 col-xs-12 form-group">
+                                  <select class="custom-select-box">
+                                      <option>Select Service</option>
+                                      <option>Select Service</option>
+                                      <option>Select Service</option>
+                                      <option>Select Service</option>
+                                  </select>
+                              </div>
+
+                              <div class="col-md-12 col-sm-12 col-xs-12 form-group">
+                                  <textarea name="message" placeholder="Add More Services"></textarea>
+                              </div>
+
+                              <div class="col-md-12 col-sm-12 col-xs-12 form-group text-center">
+                                  <button class="theme-btn btn-style-one" type="submit" name="submit-form">Book Now</button>
+                              </div>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Form Column -->
+          <div class="image-column col-lg-4 col-md-12 col-sm-12">
+              <div class="inner-column">
+                  <figure class="image"><img src="assets/images/resource/mechanic.png" alt=""></figure>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<!-- End Appointment -->
